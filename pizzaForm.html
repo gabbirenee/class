@@ -8,5 +8,69 @@
             table {border:1px solid black; border-collapse: collapse;}
             th, td {border:1px solid black; padding:5px;}
         </style>
+        <table>
+            <tr>
+                <th>Pizza Options</th>
+                <th colspan="2"></th>
+            </tr>
+            <tr>
+                <th>Size and Crust</th>
+                <th>Cheese Only</th>
+                <th>Extra Toppings</th>
+            </tr>
+            <tr>
+                <td>Medium Original</td>
+                <td>$8.99</td>
+                <td>$1.49</td>
+            </tr>
+            <tr>
+                <td>Large Original</td>
+                <td>$11.99</td>
+                <td>$1.59</td>
+            </tr>
+            <tr>
+                <td>Extra Large Original</td>
+                <td>$13.99</td>
+                <td>$1.99</td>
+            </tr>
+            <tr>
+                <td>Large Thin</td>
+                <td>$11.99</td>
+                <td>$1.59</td>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <th colspan="2">Pizza Toppings</th>
+                <th colspan="2"></th>
+            </tr>
+            <tr>
+                <th colspan="2">Meats and Cheese</th>
+                <th colspan="2">Fresh-Cut Veggies</th>
+            </tr>
+            <tr>
+                <td>Pepperoni</td>
+                <td>Sausage</td>
+                <td>Green Peppers</td>
+                <td>Onions</td>
+            </tr>
+            <tr>
+                <td>Beef</td>
+                <td>Grilled Chicken</td>
+                <td>Jalapeno Peppers</td>
+                <td>Black Olives</td>
+            </tr>
+            <tr>
+                <td>Bacon</td>
+                <td>Extra Cheese</td>
+                <td>Roma Tomatoes</td>
+                <td>Mushrooms</td>
+            </tr>
+        </table>
+        <form action="submitOrder.php" method="POST">
+            <label>First Name:</label>
+            <input type="text" name="firstName"/> <br/>
+        </form>
     </body>
 </html>
