@@ -10,7 +10,7 @@
     <body>
         <h1>Tony's Pizzeria</h1>
         <h2>Serving the best pizza in town!</h2>
-        <ul>
+        <ul>    <!--Navigation List-->
             <li>Home</li>
             <li>About</li>
             <li>Menu</li>
@@ -18,7 +18,7 @@
             <li>Locations</li>
             <li>Contact Us</li>
         </ul>
-        <table>
+        <table> <!--Pizza Pricing Table-->
             <tr>
                 <th>Pizza Options</th>
                 <th colspan="2"></th>
@@ -50,7 +50,7 @@
             </tr>
         </table>
         <br/>
-        <table>
+        <table> <!--Pizza Topping Table-->
             <tr>
                 <th colspan="2">Pizza Toppings</th>
                 <th colspan="2"></th>
@@ -78,7 +78,9 @@
                 <td>Mushrooms</td>
             </tr>
         </table>
+        <!--Form for Ordering a Pizza-->
         <form action="submitOrder.php" method="POST">
+            <!--Contact/Customer Info-->
             <label>First Name:</label>
             <input type="text" name="firstName"/> <br/>
             <label>Last Name:</label>
@@ -89,7 +91,15 @@
             <input type="text" name="city"/> <br/>
             <label>Phone Number:</label>
             <input type="text" name="phone" placeholder="777-777-7777"/> <br/>
+
+            <!--Dropdown for the pizza crusts-->
+            <select name="crust">
+                <option value="thin">Thin Crust</option>
+                <option value="hTossed">Hand-Tossed</option>
+                <option value="dDsih">Deep Dish</option>
+            </select> <br/>
         
+            <!--Checkboxes for Pizza Toppings-->
             <input type="checkbox" name="toppings" id="pepperoni" value="pepperoni"/>
             <label for="pepperoni">Pepperoni</label><br/>
             <input type="checkbox" name="toppings" id="sausage" value="sausage" />
@@ -115,19 +125,28 @@
             <input type="checkbox" name="toppings" id="extraCheese" value="extraCheese" />
             <label for="extraCheese">Extra Cheese</label><br/>
 
-
+            <!--Special Instructions Text Area-->
             <p>Special Instructions:</p>
             <textarea name="instructions" placeholder="List special preferences."></textarea> <br/>
 
-
-            <label>Credit Card:</label>
+            <!--Payment info-->
+            <p>How would you like to pay for your order?</p>
+            <input type="radio" name="payment" value="cash" id="cash" />
+            <label for="cash">Cash</label>
+            <input type="radio" name="payment" value="check" id="check"/>
+            <label for="check">Check</label>
+            <input type="radio" name="payment" value="cCard" id="cCard" />
+            <label for="cCard">Credit Card:</label>
             <input type="password" name="creditNumber"/><br/>
 
+            <!--Driver call before leaving store?-->
             <p>Would you like the driver to call before leaving the store?</p>
             <input type="radio" name="call" value="yes" id="yes" />
             <label for="yes">Yes</label>
             <input type="radio" name="call" value="no" id="no" checked/>
             <label for="no">No</label>
+            <!--Submit Button-->
+            <input type="submit" value="Order Pizza" id="Submit"/>
         </form>
     </body>
 </html>
