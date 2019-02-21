@@ -9,15 +9,15 @@
 
 <?php
 
-$firstName = $_POST["first_name"];
-$lastName = $_POST["last_name"];
+$firstName = $_POST["firstName"];
+$lastName = $_POST["lastName"];
 $email = $_POST["email"];
-$phone = $_POST["telephone"];
+$phone = $_POST["phone"];
 $comment = $_POST["comments"];
-$subject = "Web Contact Form";
+$subject = "Web Contact Form";	//What shows in the subject of the email
 
 //Enter your email address
-$to = "crector@butler.edu";
+$to = "gforsyth@butler.edu";
 
 
 //Prepare Email Body Text
@@ -38,10 +38,10 @@ $to = "crector@butler.edu";
 //Send Email
 $send_contact= mail($to,$subject,$Body);
 if($send_contact) {
-	print "<meta http-equiv=\"refresh\" content=\"0;URL=Thanks.php\">";
+	print "<meta http-equiv=\"refresh\" content=\"0;URL=thanks.php\">";
 }
  else {
-	 print "<meta http-equiv=\"refresh\" content=\"0;URL=ContactError.html\">";
+	 print "<meta http-equiv=\"refresh\" content=\"0;URL=contactError.html\">";
 }
 ?>
 
