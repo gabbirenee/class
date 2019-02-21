@@ -14,10 +14,21 @@
             <li><a href="roster.html">Roster</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        
+
         <h1>Contact Us</h1>
         <p>Questions? Just need more information? Contact us below and we'll answer all your questions!</p>
-
+        <form action="simpleForm.php" method="POST">
+            <label>First Name:</label>
+            <input type="text" name="firstName" /><br/>
+            <label>Last Name:</label>
+            <input type="text" name="lastName" /><br/>
+            <label>Email:</label>
+            <input type="text" name="email" /><br/>
+            <label>Phone Number</label>
+            <input type="text" name="phone" placeholder="000-000-0000" /> <br/>
+            <p>Comments:</p>
+            <textarea name="comments"></textarea> <br/>
+        </form>
         <ul>
             <li><a href="http://www.butler.edu">Butler University</a></li>
             <li><a href="mailto:crector@butler.edu">Suggestions</a></li>
