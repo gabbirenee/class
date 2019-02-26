@@ -4,72 +4,81 @@
         <title>CME219: FAQs</title>
     </head>
     <body id="top">
-        <ul>
-            <li><a href="courseInfo.html">Course</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="roster.html">Roster</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <h1>Frequently Asked Questions</h1>
-        <p>Here are the answers to your most asked questions.</p>
-
-        <h3><a href="#thomas">How do I connect to the server/Thomas?</a></h3>
-        <h3><a href="#connection">How do I set up the server connection in Visual Studio Code?</a></h3>
-        <h3><a href="#publish">How do I publish my webpage to the server/Thomas?</a></h3>
-        <h3><a href="#assignment">What link do I turn in for assignments?</a></h3>
-        <h3><a href="#forbidden">When I view my page/image in a browser, it says <i>Forbidden</i>. How do I correct this?</a></h3>
-
-        </br>
-
-        <h2 id="thomas">How do I connect to the server/Thomas?</h2>
-        <ol>
-            <li>Using your Mac toolbar at the top of your screen, select <i>Go</i>.</li>
-            <li>Select <i>Connect to Server...</i></li>
-            <li>Enter the following into the server address field:<br/><i>smb://thomas.butler.edu</i></li>
-            <li>Select <i>Connect</i></li>
-            <li>Enter your Butler username and password</li>
-        </ol>
-        <h2 id="connection">How do I set up the server connection in Visual Studio Code?</h2>
-        <ol>
-            <li>While in Visual Studio Code, select Shift+Command+P and type in the following: <i>SFTP:Config</i>. Hit Enter</li>
-            <li>This will open up a JSON file. Change the following fields:
+        <header>
+            <img src="images/Logo.png" alt="CME219 Logo" title="CME219 Web Course" height="44" width="276"/>
+            <img src="images/diamond.png" alt="Diamond Logo" height = "92" width = "82" />        
+            <nav>
                 <ul>
-                    <li>"host": <i>"thomas.butler.edu"</i></li>
-                    <li>"username": <i>"your username"</i></li>
-                    <li>"password": <i>"your password"</i></li>
-                    <li>"remotePath": <i>"/home/username/public_html/CME219/class"</i></li>
+                    <li><a href="courseInfo.html">Course</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="roster.html">Roster</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <li>Hit Save.</li>  
-            </li>
-        </ol>
-        <h2 id="publish">How do I publish my webpage to the server/Thomas?</h2>
-        <ol>
-            <li>Select the file that you want to upload.</li>
-            <li>Right-click and choose <i>SFTP: Upload</i>.</li>
-            <li>A message at the bottom should say <i>Upload Complete</i>.</li>
-        </ol>
-        <h2 id="assignment">What link do I turn in for assignments?</h2>
-        <p> You will need to turn in the link to your page on the server. NOT your BUFiles location. For instance, if you publish a page called <i>code.html</i> to your class folder, on the server (Thomas), your url will look like this: <i>http://blue.butler.edu/~username/class/code.html</i></p>
-        <h2 id="forbidden">When I view my page/image in a browser, it says <i>Forbidden</i>. How do I correct this?</h2>
-        <ol>
-            <li>While in Visual Studio Code toolbar at the top, click <i>View > Integrated Terminal</i>.</li>
-            <li>Enter one of the following at the prompt, based on your device:</li>
-                <ul>
-                    <li>Own Computer: <i>ssh username@thomas.butler.edu</i></li>
-                    <li>School Computer: <i>ssh thomas.butler.edu</i></li>
-                </ul>
-            <li>You will then be asked for your password. Even though it appears as if you are not typing your password, you are; the application is password-protecting your password for security reasons.</li>
-            <li>You should get the following prompt: <i>thomas%</i></li>
-            <li>Enter the following text: <i>fix_account</i></li>
-            <li>Refresh your browser.</li>
-        </ol>
-        <a href="#top">Top</a>
-        <br/>
-        <ul>
-            <li><a href="http://www.butler.edu">Butler University</a></li>
-            <li><a href="mailto:crector@butler.edu">Suggestions</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+            </nav>
+        </header>
+        <div id="contentBox">
+            <h1>Frequently Asked Questions</h1>
+            <p>Here are the answers to your most asked questions.</p>
+    
+            <h3><a href="#thomas">How do I connect to the server/Thomas?</a></h3>
+            <h3><a href="#connection">How do I set up the server connection in Visual Studio Code?</a></h3>
+            <h3><a href="#publish">How do I publish my webpage to the server/Thomas?</a></h3>
+            <h3><a href="#assignment">What link do I turn in for assignments?</a></h3>
+            <h3><a href="#forbidden">When I view my page/image in a browser, it says <i>Forbidden</i>. How do I correct this?</a></h3>
+    
+            </br>
+    
+            <h2 id="thomas">How do I connect to the server/Thomas?</h2>
+            <ol>
+                <li>Using your Mac toolbar at the top of your screen, select <i>Go</i>.</li>
+                <li>Select <i>Connect to Server...</i></li>
+                <li>Enter the following into the server address field:<br/><i>smb://thomas.butler.edu</i></li>
+                <li>Select <i>Connect</i></li>
+                <li>Enter your Butler username and password</li>
+            </ol>
+            <h2 id="connection">How do I set up the server connection in Visual Studio Code?</h2>
+            <ol>
+                <li>While in Visual Studio Code, select Shift+Command+P and type in the following: <i>SFTP:Config</i>. Hit Enter</li>
+                <li>This will open up a JSON file. Change the following fields:
+                    <ul>
+                        <li>"host": <i>"thomas.butler.edu"</i></li>
+                        <li>"username": <i>"your username"</i></li>
+                        <li>"password": <i>"your password"</i></li>
+                        <li>"remotePath": <i>"/home/username/public_html/CME219/class"</i></li>
+                    </ul>
+                    <li>Hit Save.</li>  
+                </li>
+            </ol>
+            <h2 id="publish">How do I publish my webpage to the server/Thomas?</h2>
+            <ol>
+                <li>Select the file that you want to upload.</li>
+                <li>Right-click and choose <i>SFTP: Upload</i>.</li>
+                <li>A message at the bottom should say <i>Upload Complete</i>.</li>
+            </ol>
+            <h2 id="assignment">What link do I turn in for assignments?</h2>
+            <p> You will need to turn in the link to your page on the server. NOT your BUFiles location. For instance, if you publish a page called <i>code.html</i> to your class folder, on the server (Thomas), your url will look like this: <i>http://blue.butler.edu/~username/class/code.html</i></p>
+            <h2 id="forbidden">When I view my page/image in a browser, it says <i>Forbidden</i>. How do I correct this?</h2>
+            <ol>
+                <li>While in Visual Studio Code toolbar at the top, click <i>View > Integrated Terminal</i>.</li>
+                <li>Enter one of the following at the prompt, based on your device:</li>
+                    <ul>
+                        <li>Own Computer: <i>ssh username@thomas.butler.edu</i></li>
+                        <li>School Computer: <i>ssh thomas.butler.edu</i></li>
+                    </ul>
+                <li>You will then be asked for your password. Even though it appears as if you are not typing your password, you are; the application is password-protecting your password for security reasons.</li>
+                <li>You should get the following prompt: <i>thomas%</i></li>
+                <li>Enter the following text: <i>fix_account</i></li>
+                <li>Refresh your browser.</li>
+            </ol>
+            <a href="#top">Top</a>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="http://www.butler.edu">Butler University</a></li>
+                <li><a href="mailto:crector@butler.edu">Suggestions</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
