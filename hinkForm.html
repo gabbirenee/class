@@ -4,29 +4,59 @@
         <title>Hink Tryout Form</title>
     </head>
     <body>
-        <a href="hinkHome.html"><img src="images/ButlerLogo.png" alt="Butler University" width="190" height="90" /></a>
-        <ul>
-            <li>Resources</li>
-            <li>Information</li>
-            <li><a href="hinkForm.html">Form</a></li>
-            <li>Contact Us</li>
-        </ul>
-
-        <img src="images/ButlerBulldogMascot.jpg" height="413" width="488" alt="picture of Hink Mascot" title="Hink wants YOU to tryout" />
-        <h1>TRYOUT TO BE A "HINK" MASCOT!</h1>
-        <p>Fill out the form below to tryout to be Hink! Please make sure you meet the following qualifications before completing the form:</p>
-        <ul>
-            <li>Current Butler University student</li>
-            <li>Student in good academic standing.</li>
-            <li>No previous criminal record</li>
-            <li>Must be in good health and able to perform jumps, flips, and high-5s.</li>
-            <li>Must be willing to withstand warm temperatures as you will be performing hours at a time in a warm suit.</li>
-        </ul>
-
-        <ul>
-            <li><a href="hinkHome.html">Home</a></li>
-            <li><a href="https://www.butler.edu/">Butler University</a></li>
-            <li>Contact Us</li>
-        </ul>
+        <header>
+            <a href="hinkHome.html"><img src="images/ButlerLogo.png" alt="Butler University" width="190" height="90" /></a>
+            <nav>
+                <ul>
+                    <li>Resources</li>
+                    <li>Information</li>
+                    <li><a href="hinkForm.html">Form</a></li>
+                    <li>Contact Us</li>
+                </ul>
+            </nav>
+        </header>
+        <div id="hinkBox">
+    
+            <img src="images/ButlerBulldogMascot.jpg" height="413" width="488" alt="picture of Hink Mascot" title="Hink wants YOU to tryout" />
+            <h1>TRYOUT TO BE A "HINK" MASCOT!</h1>
+            <p>Fill out the form below to tryout to be Hink! Please make sure you meet the following qualifications before completing the form:</p>
+            <ul>
+                <li>Current Butler University student</li>
+                <li>Student in good academic standing.</li>
+                <li>No previous criminal record</li>
+                <li>Must be in good health and able to perform jumps, flips, and high-5s.</li>
+                <li>Must be willing to withstand warm temperatures as you will be performing hours at a time in a warm suit.</li>
+            </ul>
+            <form action="beHink.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" /> <br/>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" /> <br/>
+                <p>Are you over the age of 18?</p>
+                <input type="radio" name="over18" value="yes" id="over18y" checked />
+                <label for="over18y">Yes</label> <br/>
+                <input type="radio" name="over18" value="no" id="over18n" />
+                <label for="over18n">No</label> <br/>
+                <label>Major College:</label>
+                <select name="college">
+                    <option value="CCOM">College of Communications</option>
+                    <option value="LSB">Andre B. Lacy School of Business</option>
+                    <option value="LAS">College of Liberal Arts and Sciences</option>
+                    <option value="JCA">Jordan College of the Arts</option>
+                    <option value="COE">College of Education</option>
+                    <option value="COPHS">College of Pharmacy and Health Sciences</option>
+                </select>
+                <p>Why do you want to be the Hink mascot?</p>
+                <textarea name="reasons" placeholder="Why should we choose you?"></textarea> <br/>
+                <input type="submit" value="I want to be HINK!" value="submit" />
+            </form>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="hinkHome.html">Home</a></li>
+                <li><a href="https://www.butler.edu/">Butler University</a></li>
+                <li><a href="hinkContact.html">Contact Us</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
