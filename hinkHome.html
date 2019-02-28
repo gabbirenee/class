@@ -8,7 +8,7 @@
             <a href="hinkHome.html"><img src="images/ButlerLogo.png" alt="Butler University" width="190" height="90" /></a>
             <nav>
                 <ul>
-                    <li>Resources</li>
+                    <li><a href="hinkSchedule.html">Resources</a></li>
                     <li>Information</li>
                     <li><a href="hinkForm.html">Form</a></li>
                     <li><a href="hinkContact.html">Contact Us</a></li>
