@@ -11,7 +11,7 @@
                     <li>Resources</li>
                     <li>Information</li>
                     <li><a href="hinkForm.html">Form</a></li>
-                    <li>Contact Us</li>
+                    <li><a href="hinkContact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </header>
