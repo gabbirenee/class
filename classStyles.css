@@ -1,0 +1,20 @@
+body {
+    color: #3d3a37;
+}
+
+header, footer {
+    background-color:#3d3a37;
+}
+
+h1, h2 {
+    color: #e2764a;
+}
+
+#contentBox {
+    background-color: #eeeceb;
+}
+
+header a, footer a {
+    color: white;
+}
+
