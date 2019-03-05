@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>CME219 | Contact Us</title>
+        <link href="classStyles.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
         <header>
