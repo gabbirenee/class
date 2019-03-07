@@ -65,3 +65,17 @@ form {
     background-color: #e2764a;
 }
 /* END OF FORM SETTINGS */
+
+
+/* FAQ SETTINGS */
+#questions h3 {
+    background-color: #eeeceb; /* can also be background-color: transparent */
+}
+
+#questions a {
+    color: #3d3a37; 
+}
+#questions a:hover {
+    color: #e2764a;
+}
+/* END OF FAQ SETTINGS */
