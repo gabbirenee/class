@@ -1,6 +1,6 @@
 body {
     color: #3d3a37;
-    background-color: #eeeceb;
+    background-color: #eeeceb;  /* Might delete later because it overlaps with #contentBox styling */
 }
 
 h1, h2 {
@@ -35,4 +35,33 @@ table {
     border: 1px solid #1f7097;
     border-collapse: collapse; 
 }
-/*END OF SCHEDULE SETTINGS
+/*END OF SCHEDULE SETTINGS */
+
+
+/* RESOURCE SETTINGS */
+.box {
+    background-color: white;
+}
+
+h3 {
+    background-color: #8bc6b0;
+}
+
+.box a {
+    color: #3d3a37; 
+}
+
+.box a:hover {
+    color: #e2764a;
+}
+/* END OF RESOURCE SETTINGS */
+
+
+/* FORM SETTINGS */
+form { 
+    background-color: white; 
+}
+#submit {
+    background-color: #e2764a;
+}
+/* END OF FORM SETTINGS */
