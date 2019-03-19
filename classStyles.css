@@ -1,10 +1,21 @@
 body {
     color: #3d3a37;
     background-color: #eeeceb;  /* Might delete later because it overlaps with #contentBox styling */
+    font-family: Avenir, Verdana, sans-serif;
+    font-size: 16pt; 
 }
 
 h1, h2 {
     color: #e2764a;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 150%;
 }
 
 #contentBox {
@@ -17,6 +28,8 @@ header, footer {
 
 header a, footer a {
     color: white;
+    font-size: 90%;
+    text-decoration: none; 
 }
 
 /* SCHEDULE SETTINGS */
@@ -45,6 +58,8 @@ table {
 
 h3 {
     background-color: #8bc6b0;
+    font-size: 110%;
+    font-weight: normal; 
 }
 
 .box a {
@@ -61,6 +76,11 @@ h3 {
 form { 
     background-color: white; 
 }
+
+label {
+    vertical-align: top;
+}
+
 #submit {
     background-color: #e2764a;
 }
