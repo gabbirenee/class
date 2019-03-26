@@ -1,37 +1,58 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Box Practice</title>
-<style>
+	<meta charset="UTF-8">
+	<title>Box Practice</title>
+	<style>
+		#boundingBox {
+			background: red; 
+			height: 200px;
+			width: 75%;
+			min-width: 150px;
+			max-width: 700px;
+		}
 
-</style>
+		#insideBox {
+			background: blue;
+			height: 50%; 
+			width: 75%; 
+		}
+		p {
+			height: 100px;
+			width: 200px;
+			background-color: pink; 
+			overflow: scroll; 
+		}
+		h1+p {	/* This means the paragraph that is immediately following the h1 */
+			overflow: hidden;
+		}
+	</style>
 
 </head>
 
 <body>
-<div id="boundingBox">
-	<div id="insideBox">This is the inside box.</div>
-    This is the bounding box.
- </div>
- 
-  <div id="contentBox">Here is where I am going to write all the content for this box. I don't care what it says, 
-  	it just has to say something. Here is where I am going to write all the content for this box. I don't care what it says, 
-  	it just has to say something. Here is where I am going to write all the content for this box. I don't care what it says, 
-  	it just has to say something. Here is where I am going to write all the content for this box. I don't care what it says, 
-  	it just has to say something. 
- </div>
- 
- <div id="circle"></div>
- 
- <h1>This is a heading</h1>
- <p>This is the hidden overflow box.This is the hidden overflow box.This is the hidden overflow box.This is the hidden 
- 	overflow box.This is the hidden overflow box. This is the hidden overflow box. This is the hidden overflow box.This 
- 	is the hidden overflow box.This is the hidden overflow box.This is the hidden overflow box.This is the hidden overflow box. 
- 	This is the hidden overflow box.</p>
+	<div id="boundingBox">
+		<div id="insideBox">This is the inside box.</div>
+		This is the bounding box.
+	</div>
+	
+	<div id="contentBox">Here is where I am going to write all the content for this box. I don't care what it says, 
+		it just has to say something. Here is where I am going to write all the content for this box. I don't care what it says, 
+		it just has to say something. Here is where I am going to write all the content for this box. I don't care what it says, 
+		it just has to say something. Here is where I am going to write all the content for this box. I don't care what it says, 
+		it just has to say something. 
+	</div>
+	
+	<div id="circle"></div>
+	
+	<h1>This is a heading</h1>
+	<p>This is the hidden overflow box.This is the hidden overflow box.This is the hidden overflow box.This is the hidden 
+		overflow box.This is the hidden overflow box. This is the hidden overflow box. This is the hidden overflow box.This 
+		is the hidden overflow box.This is the hidden overflow box.This is the hidden overflow box.This is the hidden overflow box. 
+		This is the hidden overflow box.</p>
 
- <p> This is the scroll box.  This is the scroll box. This is the scroll box. This is the scroll box. This is the scroll box. This is the scroll box.</p>
- 
+	<p> This is the scroll box.  This is the scroll box. This is the scroll box. This is the scroll box. This is the scroll box. This is the scroll box. This is the scroll box. This is the scroll box. This is the scroll box. This is the scroll box.</p>
+	
 
 </body>
 </html>
