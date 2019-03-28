@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     color: #3d3a37;
     background-color: #eeeceb;  /* Might delete later because it overlaps with #contentBox styling */
@@ -36,6 +41,10 @@ header a, footer a {
 
 header a:hover {
     color:#e2764a;
+}
+
+nav li {
+    display: inline-block;
 }
 
 /* SCHEDULE SETTINGS */
