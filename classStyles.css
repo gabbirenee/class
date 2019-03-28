@@ -5,9 +5,9 @@
 
 body {
     color: #3d3a37;
-    background-color: #eeeceb;  /* Might delete later because it overlaps with #contentBox styling */
+    background-color: #eeeceb;
     font-family: Avenir, Verdana, sans-serif;
-    font-size: 16pt; 
+    font-size: 16px; 
     line-height: 150%;
 }
 
@@ -19,18 +19,31 @@ h1, h2 {
 h1 {
     font-size: 200%;
     /* text-shadow: 2px 2px blue; */
+    margin-bottom: 5px;
 }
 
 h2 {
     font-size: 150%;
+    margin: 40px 0px 5px; 
 }
 
 #contentBox {
-    background-color: #eeeceb;
+    margin: 0px auto;
+    width: 80%;
+    min-width: 700px;
 }
 
 header, footer {
     background-color:#3d3a37;
+}
+
+footer {
+    height: 60px;
+}
+
+#logo {
+    margin: 10px;
+    display: block;
 }
 
 header a, footer a {
@@ -43,7 +56,7 @@ header a:hover {
     color:#e2764a;
 }
 
-nav li {
+nav li, footer li {
     display: inline-block;
 }
 
