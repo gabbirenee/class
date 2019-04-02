@@ -31,6 +31,7 @@ h2 {
     margin: 0px auto;
     width: 80%;
     min-width: 700px;
+    padding-bottom: 150px;
 }
 
 header, footer {
@@ -39,10 +40,11 @@ header, footer {
 
 footer {
     height: 60px;
+    text-align: center;
 }
 
 #logo {
-    margin: 10px;
+    padding: 10px;
     display: block;
 }
 
@@ -75,6 +77,10 @@ th {
 table {
     border: 1px solid #1f7097;
     border-collapse: collapse; 
+    width: 50%;     /* These next couple lines make the table responsive */
+    min-width: 400px; 
+    max-width: 700px; 
+    margin: 40px; 
 }
 /*END OF SCHEDULE SETTINGS */
 
@@ -82,12 +88,20 @@ table {
 /* RESOURCE SETTINGS */
 .box {
     background-color: white;
+    padding: 20px;
+    margin: 20px 10px; /*Top/Bottom=20px, Left/Right = 20px */ 
+    width: 80%; 
+    min-width: 400px; 
+    max-width: 700px; 
 }
 
 h3 {
     background-color: #8bc6b0;
     font-size: 110%;
     font-weight: normal; 
+    border: 2px solid white; 
+    padding: 5px 15px; 
+    width: 300px; 
 }
 
 .box a {
