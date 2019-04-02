@@ -133,6 +133,8 @@ label {
 /* FAQ SETTINGS */
 #questions h3 {
     background-color: #eeeceb; /* can also be background-color: transparent */
+    border: none;
+    width: 100%;
 }
 
 #questions a {
@@ -141,5 +143,9 @@ label {
 }
 #questions a:hover {
     color: #e2764a;
+}
+
+.box h2 {
+    margin-top: 0px;    /* What we added is overriding the other styles */
 }
 /* END OF FAQ SETTINGS */
