@@ -118,14 +118,30 @@ h3 {
 /* FORM SETTINGS */
 form { 
     background-color: white; 
+    width: 50%;     /* These next couple lines make the table responsive */
+    min-width: 400px; 
+    max-width: 700px; 
+    margin: 40px; 
+    padding: 20px; 
 }
 
 label {
     vertical-align: top;
+    display: inline-block;
+    width: 150px;   /* These line up the boxes with the label */
+    text-align: right; 
+    /* margin-right: 10px; 
+    margin-bottom: 5px; */
+    margin: 0 10px 5px 0; 
 }
 
 #submit {
     background-color: #e2764a;
+    padding: 7px 14px; 
+    color: white; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
 }
 /* END OF FORM SETTINGS */
 

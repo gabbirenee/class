@@ -7,7 +7,7 @@
     <body>
         <header>
             <!--Header information-->
-            <img src="images/Logo.png" alt="CME219 Logo" title="CME219 Web Course" height="44" width="276"/>
+            <img src="images/Logo.png" alt="CME219 Logo" title="CME219 Web Course" height="44" width="276" id="logo"/>
             <img src="images/diamond.png" alt="Diamond Logo" height = "92" width = "82" />        
             <nav>
                 <ul>
