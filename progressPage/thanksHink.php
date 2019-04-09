@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Hink Contact Us</title>
+        <link href="hinkStyles.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
         <header>
