@@ -1,7 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
-    border-width: 2px;                                                                                            
+    padding: 0;                                                                                       
 }
 
 body {
@@ -50,3 +49,29 @@ footer li {
 h1, h2, h3 {
     margin: 15px 0;
 }
+
+p {
+    margin: 6px; 
+}
+
+
+/* Table Settings */
+tr:first-child th{
+    background-color: #13294b; 
+    color: white; 
+}
+
+tr:nth-child(2) th {
+    background-color: rgb(220, 220, 220);
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* End Table Settings */
