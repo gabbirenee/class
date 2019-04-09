@@ -20,22 +20,30 @@ nav {
     font-size: 125%;
 }
 
-nav li {
+nav li, footer li {
     display: inline-block;
 }
 
-nav a {
+nav a, footer a {
     text-decoration: none; 
     color: rgb(100, 100, 100); 
 
 }
 
 footer {
+    background-color: rgb(220,220,220);
+    border: 2px #13294b; 
+    text-align: center;
+    border-top: 2px solid #13294b; 
+}
+
+footer li {
     margin: 20px;
 }
 
+
 #hinkBox {
-    margin: 40px 0 auto;
+    margin: 40px auto 40px auto;
     width: 80%;
 }
 
