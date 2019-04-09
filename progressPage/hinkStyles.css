@@ -31,7 +31,7 @@ nav a, footer a {
 
 footer {
     background-color: rgb(220,220,220);
-    border: 2px #13294b; 
+    /* border: 2px #13294b;  */
     text-align: center;
     border-top: 2px solid #13294b; 
 }
@@ -82,5 +82,18 @@ td, th {
 
 
 /* Form Settings */
+form {
+    border: 2px solid #13294b; 
+    background-color: rgb(220, 220, 220);
+    width: 75%; 
+    max-width: 600px; 
+    padding: 20px;
+    margin: 40px; 
+}
 
+#submit {
+    background-color: #13294b;
+    color: white; 
+    padding: 3px 6px; 
+}
 /* End Form Settings */
