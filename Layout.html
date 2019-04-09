@@ -4,21 +4,49 @@
 <meta charset="UTF-8">
 <title>Untitled Document</title>
 <style>
-body {width:960px;}
-nav{background-color:gray; height:150px;}
-nav ul li{list-style-type:none;}
 
-#redBox,#orangeBox, #yellowBox, #greenBox, #blueBox, #purpleBox {width:150px; height:50px;}
-.main {background-color:black; width:600px; position: relative;}
-#redBox {background-color:red;}
-#orangeBox{background-color:orange; position:relative; left:4px; top: 10px;}    /* This means moving it from the left 4px and from the top 10px so it will shift down and right */
-#yellowBox{background-color:yellow;}
-#greenBox{background-color:green; position: absolute; left: 25%; top:10%;} /* Because the position is absolute it is relative to its parent in this case .main; If the parent does not have position relative, it will keep going to the parent element (body) and position it accordingly */
-#blueBox{background-color:blue;}
-#purpleBox{background-color:purple; position:fixed; left: 10px; top: 20px;}
-#circle {background-color:pink;}
-footer{background-color:#CCC;}
-footer ul li{list-style-type:none;}
+    .clearfix::after, .clearfix::before {   /* the :: after and ::before says I will do these things before and after there is content placed in there; content: puts dummy content in that box */
+        content: '';   
+        display:block; 
+        clear: both;    /* this will clear both the left and the right floats */
+    }
+
+    body {width:960px;}
+    nav{background-color:gray; height:150px; box-shadow: 0 0 10px crimson; position: relative; z-index:2;}
+    nav ul li{list-style-type:none; /* float: right; */ float:left;}
+    nav ul { float: right;} /* The float left will put them in the right order and the float right that is applied to its parent will align them on the right */
+
+    #redBox,#orangeBox, #yellowBox, #greenBox, #blueBox, #purpleBox {width:150px; height:50px; float: left;}
+    .main {background-color:black; width:600px; position: relative;}
+    #redBox {background-color:red;}
+    #orangeBox{
+        background-color:orange; 
+        /* position:relative; 
+        left:4px; 
+        top: 10px; */
+    }    /* This means moving it from the left 4px and from the top 10px so it will shift down and right */
+    #yellowBox{
+        background-color:yellow; 
+        /* position: relative; 
+        z-index: 1; */
+    }
+    #greenBox{
+        background-color:green; 
+        clear: left;    /* this will clear all the left floats on an element */ 
+        /* position: absolute; 
+        left: 25%; 
+        top:10%; */
+    } /* Because the position is absolute it is relative to its parent in this case .main; If the parent does not have position relative, it will keep going to the parent element (body) and position it accordingly */
+    #blueBox{background-color:blue;}
+    #purpleBox{
+        background-color:purple; 
+        /* position:fixed; 
+        left: 10px; 
+        top: 20px; */
+        }
+    #circle {background-color:pink;}
+    footer{background-color:#CCC;}
+    footer ul li{list-style-type:none;}
 
 
 
@@ -35,7 +63,7 @@ footer ul li{list-style-type:none;}
     <li>Navigation 5</li>
 </ul></nav>
 
-<div class="main">
+<div class="main clearfix">
     <div id="redBox"></div>
     <div id="orangeBox"></div>
     <div id="yellowBox"></div>
