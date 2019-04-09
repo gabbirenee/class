@@ -68,10 +68,19 @@ tr:nth-child(2) th {
 table {
     border: 1px solid black;
     border-collapse: collapse;
+    width: 50%;     /* These next couple lines make the table responsive */
+    min-width: 400px; 
+    max-width: 700px; 
 }
 td, th {
     border: 1px solid black;
     padding: 5px;
+    vertical-align: top; 
 }
 
 /* End Table Settings */
+
+
+/* Form Settings */
+
+/* End Form Settings */
