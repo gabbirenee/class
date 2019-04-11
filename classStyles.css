@@ -39,6 +39,14 @@ header, footer {
     background-color:#3d3a37;
 }
 
+header {
+    height: 70px; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width:100%;
+}
+
 footer {
     height: 60px;
     text-align: center;
@@ -49,6 +57,13 @@ footer {
     display: block;
 }
 
+#diamond {
+    margin: 0 auto;
+    display: block;
+    position: relative; 
+    top: -45px; 
+}
+
 header a, footer a {
     color: white;
     font-size: 90%;
@@ -57,6 +72,12 @@ header a, footer a {
 
 header a:hover {
     color:#e2764a;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    bottom: 7px; 
 }
 
 nav li, footer li {
