@@ -29,11 +29,16 @@ h2 {
 }
 
 #contentBox {
-    margin: 0px auto;
+    margin: 120px auto 0;    /* 120px margin on the top; auto on the left and right; 0 on the bottom */
     width: 80%;
     min-width: 700px;
     padding-bottom: 150px;
 }
+
+#contentBox li {    /* this will affect unordered and ordered list items */
+    position: relative;
+    left: 25px; 
+}   
 
 header, footer {
     background-color:#3d3a37;
@@ -45,11 +50,17 @@ header {
     top: 0;
     left: 0;
     width:100%;
+    min-width: 875px; 
+    z-index: 5;
 }
 
 footer {
     height: 60px;
     text-align: center;
+}
+
+footer li {
+    margin: 20px;
 }
 
 #logo {
@@ -77,11 +88,24 @@ header a:hover {
 nav {
     position: absolute;
     right: 0;
-    bottom: 7px; 
+    bottom: 10px; 
+    margin-right: 20px; 
 }
 
 nav li, footer li {
     display: inline-block;
+}
+
+header a {
+    padding: 10px; 
+}
+
+.peoplePic {
+    border: 1px solid #3d3a37;
+    padding: 7px; 
+    background-color: white; 
+    float: right;
+    margin-left: 20px; 
 }
 
 /* SCHEDULE SETTINGS */
@@ -102,7 +126,13 @@ table {
     width: 50%;     /* These next couple lines make the table responsive */
     min-width: 400px; 
     max-width: 700px; 
-    margin: 40px; 
+    margin: 40px 40px 0;
+}
+
+table+p {
+    margin-left: 40px;
+    font-size: 90%;
+    font-style: italic; 
 }
 /*END OF SCHEDULE SETTINGS */
 
@@ -111,7 +141,7 @@ table {
 .box {
     background-color: white;
     padding: 20px;
-    margin: 20px 10px; /*Top/Bottom=20px, Left/Right = 20px */ 
+    margin: 20px 10px 0; /*Top/Bottom=20px, Left/Right = 20px */ 
     width: 80%; 
     min-width: 400px; 
     max-width: 700px; 
@@ -124,6 +154,9 @@ h3 {
     border: 2px solid white; 
     padding: 5px 15px; 
     width: 300px; 
+    position: relative; 
+    top: 40px; 
+    left: 25px; 
 }
 
 .box a {
@@ -140,7 +173,7 @@ h3 {
 /* FORM SETTINGS */
 form { 
     background-color: white; 
-    width: 50%;     /* These next couple lines make the table responsive */
+    width: 50%;     /* These next couple lines make the form responsive */
     min-width: 400px; 
     max-width: 700px; 
     margin: 40px; 
@@ -164,6 +197,9 @@ label {
     font-weight: bold; 
     border: none; 
     border-radius: 5px; 
+    position: relative; 
+    left: 165px; 
+    margin-top: 10px; 
 }
 /* END OF FORM SETTINGS */
 
