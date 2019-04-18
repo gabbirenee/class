@@ -1,0 +1,115 @@
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+    background-color: darkred;
+    padding: 5px 60px; 
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    font-size: 150%;
+    padding-right: 20px; 
+    font-weight: bold; 
+    color: white; 
+}
+
+nav li {
+    display: inline-block; 
+    text-align: center;
+    margin: 10px 15px; 
+}
+
+h1 {
+    font-size: 300%;
+    text-shadow: 4px 4px #D95204;
+    color: white;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.ingredients  {
+    width: 225px; 
+    line-height: 20px;
+}
+
+input {
+    border-style: outset;
+    color: green;
+}
+
+input:focus {
+    border-style: inset;
+}
+
+
+.main {
+    background-color: burlywood;
+    border-radius: 1%;
+    padding: 20px; 
+}
+
+.instructions {
+    width: 200px; 
+    line-height: 1.6; 
+    border: 2px solid black; 
+    border-radius: 5%;
+    margin: 0 10px; 
+    background-color: white;
+}
+
+
+/* Start Table Stylings */
+#pizzaTable tr:nth-child(4), #pizzaTable tr:nth-child(6) {
+    background-color:rgba(255,255,255,0.2);
+}
+
+#pizzaTable tr:nth-child(3), #pizzaTable tr:nth-child(5) {
+    background-color:rgba(217,82,4,0.2);
+}
+
+th {
+    color: green; 
+    text-align: left;
+    /* border-bottom: steelblue; */
+}
+td {
+    width: 150px; 
+}
+/* End Table Stylings */
+
+/* Form Stylings */
+#Submit {
+    color: white;
+    background-color: #D95204; 
+    border-color: white;
+    margin: 8px; 
+    padding: 8px; 
+}
+
+fieldset {
+    border: 2px black solid;
+    border-radius: 2%;
+}
+
+legend {
+    font-size: 120%;
+    color: white;
+    background-color: darkred;
+    text-shadow:2px 0 black;
+    margin: 5px; 
+    padding: 5px; 
+    font-weight: bold;
+    border-radius: 2%;
+}
+/* End Form Stylings */

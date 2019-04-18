@@ -2,161 +2,183 @@
 <html>
     <head>
         <title>Tony's Pizzeria</title>
-        <style>
+        <!-- <style>
             table {border:1px solid black; border-collapse: collapse;}
             th, td {border:1px solid black; padding:5px;}
-        </style>
+        </style> -->
+        <link href="pizzaStyles.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
-        <h1>Tony's Pizzeria</h1>
-        <h2>Serving the best pizza in town!</h2>
-        <ul>    <!--Navigation List-->
-            <li>Home</li>
-            <li>About</li>
-            <li>Menu</li>
-            <li>Deals</li>
-            <li>Locations</li>
-            <li>Contact Us</li>
-        </ul>
-        <table> <!--Pizza Pricing Table-->
-            <tr>
-                <th>Pizza Options</th>
-                <th colspan="2"></th>
-            </tr>
-            <tr>
-                <th>Size and Crust</th>
-                <th>Cheese Only</th>
-                <th>Extra Toppings</th>
-            </tr>
-            <tr>
-                <td>Medium Original</td>
-                <td>$8.99</td>
-                <td>$1.49</td>
-            </tr>
-            <tr>
-                <td>Large Original</td>
-                <td>$11.99</td>
-                <td>$1.59</td>
-            </tr>
-            <tr>
-                <td>Extra Large Original</td>
-                <td>$13.99</td>
-                <td>$1.99</td>
-            </tr>
-            <tr>
-                <td>Large Thin</td>
-                <td>$11.99</td>
-                <td>$1.59</td>
-            </tr>
-        </table>
-        <br/>
-        <table> <!--Pizza Topping Table-->
-            <tr>
-                <th colspan="2">Pizza Toppings</th>
-                <th colspan="2"></th>
-            </tr>
-            <tr>
-                <th colspan="2">Meats and Cheese</th>
-                <th colspan="2">Fresh-Cut Veggies</th>
-            </tr>
-            <tr>
-                <td>Pepperoni</td>
-                <td>Sausage</td>
-                <td>Green Peppers</td>
-                <td>Onions</td>
-            </tr>
-            <tr>
-                <td>Beef</td>
-                <td>Grilled Chicken</td>
-                <td>Jalapeno Peppers</td>
-                <td>Black Olives</td>
-            </tr>
-            <tr>
-                <td>Bacon</td>
-                <td>Extra Cheese</td>
-                <td>Roma Tomatoes</td>
-                <td>Mushrooms</td>
-            </tr>
-        </table>
-        <!--Form for Ordering a Pizza-->
-        <form action="submitOrder.php" method="POST">
-            <!--Contact/Customer Info-->
-                <fieldset>
-                    <legend>Customer Information</legend>
-                    <label>First Name:</label>
-                    <input type="text" name="firstName"/> <br/>
-                    <label>Last Name:</label>
-                    <input type="text" name="lastName"/> <br/>
-                    <label>Street Address:</label>
-                    <input type="text" name="address"/> <br/>
-                    <label>City:</label>
-                    <input type="text" name="city"/> <br/>
-                    <label>Phone Number:</label>
-                    <input type="text" name="phone" placeholder="777-777-7777"/> <br/>
-                </fieldset>
-
-            
-                <fieldset>
-                    <legend>Pizza Information</legend>
-                    <!--Dropdown for the pizza crusts-->
-                    <select name="crust">
-                        <option value="thin">Thin Crust</option>
-                        <option value="hTossed">Hand-Tossed</option>
-                        <option value="dDish">Deep Dish</option>
-                    </select> <br/>
+        <header>
+            <h1>Tony's Pizzeria</h1>
+            <h2>Serving the best pizza in town!</h2>
+            <nav>
+                <ul>    <!--Navigation List-->
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Menu</li>
+                    <li>Deals</li>
+                    <li>Locations</li>
+                    <li>Contact Us</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main">
+            <div class = "instructions">
+                <h3>How it works:</h3>
+                <ol>
+                    <li>Take a look at our long list of toppings. We have everything from spicy Italian sausage to pineapple.</li>
+                    <li>Fill in your information below. Enter in your pizza information… everything from the size, crust type, and any combination of toppings.</li>
+                    <li>Enter in your personal and payment information. This will allow us to deliver your pizza as quickly as possible.</li>
+                    <li>Wait a few minutes for our driver to deliver your pizza… hot and fresh to your door.</li>
+                </ol>
+            </div>
+            <table id="pizzaTable"> <!--Pizza Pricing Table-->
+                <tr>
+                    <th>Pizza Options</th>
+                    <th colspan="2"></th>
+                </tr>
+                <tr>
+                    <th>Size and Crust</th>
+                    <th>Cheese Only</th>
+                    <th>Extra Toppings</th>
+                </tr>
+                <tr>
+                    <td>Medium Original</td>
+                    <td>$8.99</td>
+                    <td>$1.49</td>
+                </tr>
+                <tr>
+                    <td>Large Original</td>
+                    <td>$11.99</td>
+                    <td>$1.59</td>
+                </tr>
+                <tr>
+                    <td>Extra Large Original</td>
+                    <td>$13.99</td>
+                    <td>$1.99</td>
+                </tr>
+                <tr>
+                    <td>Large Thin</td>
+                    <td>$11.99</td>
+                    <td>$1.59</td>
+                </tr>
+            </table>
+            <br/>
+            <table> <!--Pizza Topping Table-->
+                <tr>
+                    <th colspan="2">Pizza Toppings</th>
+                    <th colspan="2"></th>
+                </tr>
+                <tr>
+                    <th colspan="2">Meats and Cheese</th>
+                    <th colspan="2">Fresh-Cut Veggies</th>
+                </tr>
+                <tr>
+                    <td>Pepperoni</td>
+                    <td>Sausage</td>
+                    <td>Green Peppers</td>
+                    <td>Onions</td>
+                </tr>
+                <tr>
+                    <td>Beef</td>
+                    <td>Grilled Chicken</td>
+                    <td>Jalapeno Peppers</td>
+                    <td>Black Olives</td>
+                </tr>
+                <tr>
+                    <td>Bacon</td>
+                    <td>Extra Cheese</td>
+                    <td>Roma Tomatoes</td>
+                    <td>Mushrooms</td>
+                </tr>
+            </table>
+            <!--Form for Ordering a Pizza-->
+            <form action="submitOrder.php" method="POST">
+                <!--Contact/Customer Info-->
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <label>First Name:</label>
+                        <input type="text" name="firstName"/> <br/>
+                        <label>Last Name:</label>
+                        <input type="text" name="lastName"/> <br/>
+                        <label>Street Address:</label>
+                        <input type="text" name="address"/> <br/>
+                        <label>City:</label>
+                        <input type="text" name="city"/> <br/>
+                        <label>Phone Number:</label>
+                        <input type="text" name="phone" placeholder="777-777-7777"/> <br/>
+                    </fieldset>
+    
                 
-                    <!--Checkboxes for Pizza Toppings-->
-                    <input type="checkbox" name="toppings" id="pepperoni" value="pepperoni"/>
-                    <label for="pepperoni">Pepperoni</label><br/>
-                    <input type="checkbox" name="toppings" id="sausage" value="sausage" />
-                    <label for="sausage">Sausage</label><br/>
-                    <input type="checkbox" name="toppings" id="beef" value="beef" />
-                    <label for="beef">Beef</label><br/>
-                    <input type="checkbox" name="toppings" id="grilledChicken" value="grilledChicken" />
-                    <label for="grilledChicken">Grilled Chicken</label><br/>
-                    <input type="checkbox" name="toppings" id="bacon" value="bacon" />
-                    <label for="bacon">Bacon</label><br/>
-                    <input type="checkbox" name="toppings" id="mushrooms" value="mushrooms" />
-                    <label for="mushrooms">Mushrooms</label><br/>
-                    <input type="checkbox" name="toppings" id="blackOlives" value="blackOlives" />
-                    <label for="blackOlives">Black Olives</label><br/>
-                    <input type="checkbox" name="toppings" id="tomatoes" value="tomatoes" />
-                    <label for="tomatoes">Tomatoes</label><br/>
-                    <input type="checkbox" name="toppings" id="greenPeppers" value="greenPeppers" />
-                    <label for="greenPeppers">Green Peppers</label><br/>
-                    <input type="checkbox" name="toppings" id="jalapenoPeppers" value="jalapenoPeppers" />
-                    <label for="jalapenoPeppers">Jalapeno Peppers</label><br/>
-                    <input type="checkbox" name="toppings" id="onions" value="onions" />
-                    <label for="onions">Onions</label><br/>
-                    <input type="checkbox" name="toppings" id="extraCheese" value="extraCheese" />
-                    <label for="extraCheese">Extra Cheese</label><br/>
-        
-                    <!--Special Instructions Text Area-->
-                    <p>Special Instructions:</p>
-                    <textarea name="instructions" placeholder="List special preferences."></textarea> <br/>
-
-                </fieldset>
-                <fieldset>
-                    <legend>Payment Information</legend>
-                    <!--Payment info-->
-                    <p>How would you like to pay for your order?</p>
-                    <input type="radio" name="payment" value="cash" id="cash" />
-                    <label for="cash">Cash</label>
-                    <input type="radio" name="payment" value="check" id="check"/>
-                    <label for="check">Check</label>
-                    <input type="radio" name="payment" value="cCard" id="cCard" />
-                    <label for="cCard">Credit Card:</label>
-                    <input type="password" name="creditNumber"/><br/>
-        
-                    <!--Driver call before leaving store?-->
-                    <p>Would you like the driver to call before leaving the store?</p>
-                    <input type="radio" name="call" value="yes" id="yes" />
-                    <label for="yes">Yes</label>
-                    <input type="radio" name="call" value="no" id="no" checked/>
-                    <label for="no">No</label> <br/>
-                    <!--Submit Button-->
-                    <input type="submit" value="Order Pizza" id="Submit"/>
-                </fieldset>
-        </form>
+                    <fieldset>
+                        <legend>Pizza Information</legend>
+                        <!--Dropdown for the pizza crusts-->
+                        <select name="crust">
+                            <option value="thin">Thin Crust</option>
+                            <option value="hTossed">Hand-Tossed</option>
+                            <option value="dDish">Deep Dish</option>
+                        </select> <br/>
+                    
+                        <!--Checkboxes for Pizza Toppings-->
+                        <div class="ingredients">
+                            <input type="checkbox" name="toppings" id="pepperoni" value="pepperoni"/>
+                            <label for="pepperoni">Pepperoni</label><br/>
+                            <input type="checkbox" name="toppings" id="sausage" value="sausage" />
+                            <label for="sausage">Sausage</label><br/>
+                            <input type="checkbox" name="toppings" id="beef" value="beef" />
+                            <label for="beef">Beef</label><br/>
+                            <input type="checkbox" name="toppings" id="grilledChicken" value="grilledChicken" />
+                            <label for="grilledChicken">Grilled Chicken</label><br/>
+                        </div>
+                        <div class="ingredients">
+                            <input type="checkbox" name="toppings" id="bacon" value="bacon" />
+                            <label for="bacon">Bacon</label><br/>
+                            <input type="checkbox" name="toppings" id="mushrooms" value="mushrooms" />
+                            <label for="mushrooms">Mushrooms</label><br/>
+                            <input type="checkbox" name="toppings" id="blackOlives" value="blackOlives" />
+                            <label for="blackOlives">Black Olives</label><br/>
+                            <input type="checkbox" name="toppings" id="tomatoes" value="tomatoes" />
+                            <label for="tomatoes">Tomatoes</label><br/>
+                        </div>
+                        <div class="ingredients">
+                            <input type="checkbox" name="toppings" id="greenPeppers" value="greenPeppers" />
+                            <label for="greenPeppers">Green Peppers</label><br/>
+                            <input type="checkbox" name="toppings" id="jalapenoPeppers" value="jalapenoPeppers" />
+                            <label for="jalapenoPeppers">Jalapeno Peppers</label><br/>
+                            <input type="checkbox" name="toppings" id="onions" value="onions" />
+                            <label for="onions">Onions</label><br/>
+                            <input type="checkbox" name="toppings" id="extraCheese" value="extraCheese" />
+                            <label for="extraCheese">Extra Cheese</label><br/>
+                        </div>
+            
+                        <!--Special Instructions Text Area-->
+                        <p>Special Instructions:</p>
+                        <textarea name="instructions" placeholder="List special preferences."></textarea> <br/>
+    
+                    </fieldset>
+                    <fieldset>
+                        <legend>Payment Information</legend>
+                        <!--Payment info-->
+                        <p>How would you like to pay for your order?</p>
+                        <input type="radio" name="payment" value="cash" id="cash" />
+                        <label for="cash">Cash</label>
+                        <input type="radio" name="payment" value="check" id="check"/>
+                        <label for="check">Check</label>
+                        <input type="radio" name="payment" value="cCard" id="cCard" />
+                        <label for="cCard">Credit Card:</label>
+                        <input type="password" name="creditNumber"/><br/>
+            
+                        <!--Driver call before leaving store?-->
+                        <p>Would you like the driver to call before leaving the store?</p>
+                        <input type="radio" name="call" value="yes" id="yes" />
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="call" value="no" id="no" checked/>
+                        <label for="no">No</label> <br/>
+                        <!--Submit Button-->
+                        <input type="submit" value="Order Pizza" id="Submit"/>
+                    </fieldset>
+            </form>
+        </div>
     </body>
 </html>
