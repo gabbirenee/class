@@ -1,9 +1,19 @@
 
+* {
+    marign: 0;
+    padding: 0;
+}
+
 body {
     font-family: Verdana, Geneva, sans-serif;
     font-size: 10px;
     background-color: darkred;
     padding: 5px 60px; 
+    background-image: url(images/Tony.png), url(images/Redbackground.jpg);  /* First image in the list will be the one that appears on top */
+    /* background-repeat: repeat-x; will repeat the image only on the x-axis; There will be one row of the image -- If we did repeat-y there would be one column of the image */
+    background-repeat: no-repeat, repeat;   /* No repeat will work for the Tony picture; Repeat goes for the red background */
+    background-attachment : fixed;  /* Keeps same position on window; only affects non repeating images */
+    background-position: left bottom;  
 }
 
 header {
@@ -41,6 +51,11 @@ h3 {
 .ingredients  {
     width: 225px; 
     line-height: 20px;
+    float: left;
+}
+
+.ingredients+p {
+    clear: left;
 }
 
 input {
@@ -55,17 +70,20 @@ input:focus {
 
 .main {
     background-color: burlywood;
-    border-radius: 1%;
+    border-radius: 15px; 
     padding: 20px; 
+    margin: 20px 100px;
 }
 
 .instructions {
     width: 200px; 
     line-height: 1.6; 
     border: 2px solid black; 
-    border-radius: 5%;
+    border-radius: 15px; 
     margin: 0 10px; 
     background-color: white;
+    float: right;
+    padding: 10px 20px; 
 }
 
 
@@ -82,7 +100,9 @@ th {
     color: green; 
     text-align: left;
     /* border-bottom: steelblue; */
+    font-size: 150%;
 }
+
 td {
     width: 150px; 
 }
@@ -98,8 +118,17 @@ td {
 }
 
 fieldset {
-    border: 2px black solid;
-    border-radius: 2%;
+    border: 1px black solid;
+    border-radius: 15px; 
+    padding: 10px 20px 20px;
+    margin: 15px 5px; 
+    background-image: url(images/pizza.png);
+    background-repeat: no-repeat; 
+    /* background-size: contain; */
+    background-position: bottom right; 
+    background-origin: content-box; 
+    width: 95%; 
+    line-height: 30px;
 }
 
 legend {
@@ -108,8 +137,8 @@ legend {
     background-color: darkred;
     text-shadow:2px 0 black;
     margin: 5px; 
-    padding: 5px; 
+    padding: 2px 30px 2px 7px; 
     font-weight: bold;
-    border-radius: 2%;
+    border-radius: 5px;
 }
 /* End Form Stylings */
