@@ -223,3 +223,31 @@ label {
     margin-top: 0px;    /* What we added is overriding the other styles */
 }
 /* END OF FAQ SETTINGS */
+
+
+/* INDEX PAGE SETTINGS */
+#pictureBox {
+    background-image: url(images/book.jpg);
+    height: 400px; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#indexText {
+    width: 50%;
+    float: left;
+    padding: 0 5%;
+}
+
+#featureText {
+    border-left: 1px solid #3d3a37;
+    width: 25%;
+    float: left; 
+}
+
+.clearfix::before, .clearfix::after {
+    content: '';
+    display: block; 
+    clear: both; 
+}
+/* END INDEX PAGE SETTINGS */
