@@ -96,6 +96,11 @@ input:focus {
     background-color:rgba(217,82,4,0.2);
 }
 
+table {
+    margin-bottom: 10px;
+    font-size: 110%;
+}
+
 th {
     color: green; 
     text-align: left;
