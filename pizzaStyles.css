@@ -7,7 +7,7 @@
 body {
     font-family: Verdana, Geneva, sans-serif;
     font-size: 10px;
-    background-color: darkred;
+    background-color:red;
     padding: 5px 60px; 
     background-image: url(images/Tony.png), url(images/Redbackground.jpg);  /* First image in the list will be the one that appears on top */
     /* background-repeat: repeat-x; will repeat the image only on the x-axis; There will be one row of the image -- If we did repeat-y there would be one column of the image */
@@ -45,7 +45,7 @@ h2 {
 
 h3 {
     font-weight: bold;
-    text-align: center;
+    color: green;
 }
 
 .ingredients  {
@@ -73,7 +73,9 @@ input:focus {
     border-radius: 15px; 
     padding: 20px; 
     margin: 20px 100px;
+    border: 1px solid black; 
 }
+
 
 .instructions {
     width: 200px; 
@@ -120,6 +122,7 @@ td {
     border-color: white;
     margin: 8px; 
     padding: 8px; 
+    font-weight: bold;
 }
 
 fieldset {
@@ -139,7 +142,7 @@ fieldset {
 legend {
     font-size: 120%;
     color: white;
-    background-color: darkred;
+    background-color: rgb(223, 6, 6);
     text-shadow:2px 0 black;
     margin: 5px; 
     padding: 2px 30px 2px 7px; 
